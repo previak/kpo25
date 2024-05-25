@@ -1,0 +1,12 @@
+version: "3"
+services:
+  database:
+    image: postgres
+    restart: always
+    container_name: kpo25
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: kpo25
+    ports:
+      - "5432:5432"
